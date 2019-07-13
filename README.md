@@ -1,16 +1,19 @@
-# GCodeJSON
+# GCode
 
-**TODO: Add description**
+```elixir
+iex> GCode.decode("G00 x15 y21")
+%{attributes: [], command: [g: 0], position: [x: 15, y: 21]}
+```
 
 ## Installation
 
 If [available in Hex](https://hex.pm/docs/publish), the package can be installed
-by adding `gcode_json` to your list of dependencies in `mix.exs`:
+by adding `gcode` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
   [
-    {:gcode_json, "~> 0.1.0"}
+    {:gcode, "~> 0.1.0"}
   ]
 end
 ```
